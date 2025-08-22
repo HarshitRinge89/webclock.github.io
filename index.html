@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang ='en'>
+    <head>
+        <title>Clock</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <script type="text/javascript" src="time.js" defer></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body onload= "startTime()" window.onload="checkDate()">
+        <div id="digiclk">
+            The Time Right now in IST is:
+            <div id="time"></div>
+        </div>             
+        <div id="clock">
+            <div id="clock-face">
+                <div class="clk">1</div>
+                <div class="clk">2</div>
+                <div class="clk">3</div>
+                <div class="clk">4</div>
+                <div class="clk">5</div>
+                <div class="clk">6</div>
+                <div class="clk">7</div>
+                <div class="clk">8</div>
+                <div class="clk">9</div>
+                <div class="clk">10</div>
+                <div class="clk">11</div>
+                <div class="clk">12</div>
+            </div>
+            <div id="minutehand" class="hand"></div>
+            <div id="hourhand" class="hand"></div>
+            <div id="secondhand" class="hand"></div>
+            <div class="pin"></div>
+        </div>
+        <style> #clock{ display:none;}</style>
+        <button id="switcher" onclick="displayElement()">Switch</button>
+    </body>
+</html>
