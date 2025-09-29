@@ -92,4 +92,4 @@ async function checkweather(city) {
     document.querySelector(".error").style.display= "none";
   }
 }
-searchbtn.addEventListener("click",()=>{ checkweather(searchbox.value)})
+//searchbtn.addEventListener("click",()=>{ checkweather(searchbox.value)})
