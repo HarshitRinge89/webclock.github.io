@@ -53,3 +53,43 @@ function displayElement() {
   if (digi.style.display !== "none") {digi.style.display = "none";analog.style.display = "block";}
   else {digi.style.display = "block";analog.style.display = "none";}
 }
+
+// Weather Card
+const apiurl = "http://api.weatherstack.com/current";
+const searchbox = document.querySelector(".search input");
+const searchbtn = document.querySelector(".search-button")
+const wicon = document.querySelector(".wicon")
+async function checkweather(city) {
+  const respose = await fetch(apiurl + "?access_key=a802d52578a6334da7354a4f6f4f7b5d" + "&query=${city}");
+  if(Response.status =="404"){
+    document.querySelector(".error").style.display= "block";
+    document.querySelector(".weather").style.display= "none";
+  }
+  else{
+    var data = await respose.json();
+    console.log(data);
+    document.querySelector(".city").innerHTML = data.location.name;
+    document.querySelector(".temp").innerHTML = Math.round(data.current.temperature) + "°C";
+    document.querySelector(".humidity").innerHTML = data.current.humidity + "%";
+    document.querySelector(".wind").innerHTML = data.current.wind + "Km/H";
+
+    if(data.weather[0].main == "Clouds"){
+      wicon.src ="images/clouds.png";
+    }
+    else if(data.weather[0].main == "Clear"){
+      wicon.src ="images/clear.png";
+    }
+      else if(data.weather[0].main == "Rain"){
+      wicon.src ="images/rain.png";
+    }
+      else if(data.weather[0].main == "Drizzle"){
+      wicon.src ="images/drizzle.png";
+    }
+      else if(data.weather[0].main == "Mist"){
+      wicon.src ="images/mist.png";
+    }
+    document.querySelector(".weather").style.display= "block";
+    document.querySelector(".error").style.display= "none";
+  }
+}
+searchbtn.addEventListener("click",()=>{ checkweather(searchbox.value)})
