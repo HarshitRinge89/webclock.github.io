@@ -4,8 +4,13 @@ html{
     line-height: 30px;
 }
 body{
+    width: 100vw;
+    height: 100vh;
     color:#ecf2f8;
-    font-family:'Ubuntu';   
+    font-family:'Ubuntu';
+    background: url("https://i.redd.it/g7x3ry8vmhbb1.png");
+    background-repeat: repeat-y;
+    background-position: 0%;   
 }
 #digiclk{
     margin-top: 89%;
