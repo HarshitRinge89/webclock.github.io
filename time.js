@@ -55,7 +55,7 @@ function displayElement() {
 }
 
 // Weather Card
-const apiurl = "http://api.weatherstack.com/current";
+const apiurl = "https://api.weatherstack.com/current";
 const searchbox = document.querySelector(".search input");
 const searchbtn = document.querySelector(".search-button")
 const wicon = document.querySelector(".wicon")
@@ -93,3 +93,4 @@ async function checkweather(city) {
   }
 }
 searchbtn.addEventListener("click",()=>{ checkweather(searchbox.value)})
+
