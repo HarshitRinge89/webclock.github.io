@@ -1,12 +1,11 @@
-/*style refactor*/
 html{
     background-color:#353535;
     font-size:20px;
     line-height: 30px;
 }
 body{
+    background-color: black;
     width: 100vw;
-    height: 100vh;
     color:#ecf2f8;
     font-family:'Ubuntu';
     background: url("https://i.redd.it/g7x3ry8vmhbb1.png");
@@ -26,7 +25,7 @@ body{
     margin-top: 15px;
     left: 50%;
     right: 50%;
-    margin-left: 22.5%;
+    /* margin-left: 22.5%; */
     color: white;
     box-shadow: 4px;
     width: 175px;
@@ -173,7 +172,6 @@ body{
 }
 .clock-part{
     margin-left: 10%;
-    justify-content: center;
     padding-left: 5%;
     display: flex;
     flex-direction: column;
@@ -202,22 +200,19 @@ body{
 .search input{
     border-radius: 30px;
     color: #555;
-    margin-top: 16px;
-    margin-right: 16px;
-    margin-left: 16px;
+    margin: 3%;
     font-size: 18px;
-    padding:10px 25px;
+    padding:10px 20px;
     flex: 1;
-
 }
 .search-button{
     margin-top: 1%;
-    margin-right: 1%;
+    margin-right: 2%;
     background: #ebfffc;
     border: 0;
     outline: 0;
-    width:60px;
-    height:60px;
+    width:50px;
+    height:50px;
     border-radius:50%;
 }
 .search-button img{
@@ -251,5 +246,11 @@ body{
     .super{
         flex-direction: column;
     }
+    #switcher{
+        margin-left:-165px;
+    }
+    .weather-card{
+        margin-top:15%;
+        margin-left: 5%;
+    }
 }
-
