@@ -13,7 +13,8 @@
     <body onload= "startTime()" window.onload="checkDate()">
         <div class="super">
             <div class="clock-part">
-                <div id="digiclk">
+                <center>
+                <div id="digiclk" class="card">
                     The Time Right now in IST is:
                     <div id="time"></div>
                 </div>
@@ -38,11 +39,12 @@
                     <div class="pin"></div>
                 </div>
                 <style> #clock{ display:none;}</style>
-                <center><button id="switcher" onclick="displayElement()">Switch</button></center>
+                <button id="switcher" onclick="displayElement()">Switch</button>
                 <div id="container">
-                    <div id="dayndate"></div>
-                    <div id="utc"></div>
+                    <div id="dayndate" class="card"></div>
+                    <div id="utc" class="card" ></div>
                 </div>
+            </center>
             </div>   
             <div class="weather-card">
                 <div class="search">
