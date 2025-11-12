@@ -1,23 +1,22 @@
 html{
-    background-color:#353535;
+    background-color: hsl(0,0%,0%);
     font-size:20px;
     line-height: 30px;
 }
 body{
-    background-color: black;
-    width: 100vw;
-    color:#ecf2f8;
+    background-color: hsl(0,0%,0%);
+    color:hsl(0,0%,95%);
     font-family:'Ubuntu';
-    background: url("https://i.redd.it/g7x3ry8vmhbb1.png");
-    background-repeat: repeat-y;
-    background-position: 0%;   
+    /* background: url("https://i.redd.it/g7x3ry8vmhbb1.png"); */
+    /* background-repeat: repeat-y;
+    background-position: 0%;    */
 }
 #digiclk{
     margin-top: 89%;
     padding: 25px;
     width:275px;
     height: 60px;
-    background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0.jpg");
+    /* background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0.jpg"); */
     color: bisque;  
     border-radius: 15px;
 }
@@ -30,7 +29,7 @@ body{
     box-shadow: 4px;
     width: 175px;
     height: 75px;
-    background-color:#192645;
+    background-color: hsl(0,0%,15%);
     border-radius: 10px;
     border: 3px;
     border-color: white;
@@ -43,9 +42,16 @@ body{
     box-shadow: 0 8px 0 0 #0e1830;
     transform: scale(0.95);
 }
+#switcher:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+.card{
+    background-color: hsl(0,0%,5%);
+}
 #clock{
     /* justify-self: center; */
-    margin-left: -10%;
+    /* margin-left: -10%; */
     width:400px;
     height:400px;
     background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0 copy.jpg");
@@ -150,16 +156,16 @@ body{
 #dayndate{
     margin-top: 1%;
     padding: 25px;
-    width:275px;
-    background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0.jpg");
+    /* width:275px; */
+    /* background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0.jpg"); */
     color: bisque;  
     border-radius: 15px;
 }
 #utc{
     margin-top: 1%;
     padding: 25px;
-    width:275px;
-    background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0.jpg");
+    /* width:275px; */
+    /* background-image: url("d35y9h6-158d767b-ef4d-45c4-ba7e-9bdc817850d0.jpg"); */
     color: bisque;  
     border-radius: 15px;
 }
@@ -171,8 +177,9 @@ body{
     gap:10%;
 }
 .clock-part{
+    max-width:400px;
     margin-left: 10%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     display: flex;
     flex-direction: column;
 }
@@ -185,7 +192,8 @@ body{
 
 .weather-card{
     border-radius: 30px;
-    background:linear-gradient(270deg,#00feba,#5b548a);
+    /* background:linear-gradient(270deg,#00feba,#5b548a); */
+    background-color: hsl(0,0%,5%);
     margin-top: 5%;
     width:90%;
     max-width:470px;
