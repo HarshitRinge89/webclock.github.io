@@ -29,6 +29,11 @@ function startTime(){
   document.getElementById('utc').innerHTML = "The UTC Time is: "+  utch + ":" + utcm + ":" + utcs;
   setTimeout(startTime, 1000);
 }
+document.getElementById("searchInput").addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+        document.querySelector(".search-button").click();
+    }
+});
 function checkTime(i) {if(i<10){i="0"+i};return i;}
 function checkDate(){
   const tday= new Date();
@@ -93,4 +98,3 @@ async function checkweather(city) {
   }
 }
 searchbtn.addEventListener("click",()=>{ checkweather(searchbox.value)})
-
